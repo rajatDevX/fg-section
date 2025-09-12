@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position property</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        height: 800px;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+      }
+      #first {
+        position: static;
+        top: 50px;
+      }
+      #second {
+        position: relative;
+        top: 100px;
+      }
+      #third {
+        position: absolute;
+        top: 150px;
+      }
+      #fourth {
+        position: sticky;
+        top: 150px;
+      }
+      #fifth {
+        position: fixed;
+        top: 50px;
+      }
+      .container2 {
+        height: 800px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="image1.avif" alt="first" id="first" />
+      <img src="image2.avif" alt="second" id="second" />
+      <img src="image3.avif" alt="third" id="third" />
+      <img src="image4.avif" alt="fourth" id="fourth" />
+      <img src="image5.avif" alt="fifth" id="fifth" />
+    </div>
+    <div class="container2"></div>
+  </body>
+</html>
